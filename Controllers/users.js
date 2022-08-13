@@ -29,8 +29,8 @@ const checkUser = (userName)=>{
 const checkUsrcredentials = (userId, passwd, done)=>{
     let user = checkUser(userId)
     if (user){
-       console.log('userCheckCredential:::::',user)
-         return crypto.comparePasswd(passwd, user.password, done)
+       //console.log('userCheckCredential:::::',user)
+        return crypto.comparePasswd(passwd, user.password, done)
 
     }else{
 

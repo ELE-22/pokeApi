@@ -73,7 +73,6 @@ describe('Suite de pruebas de teams', ()=>{
                 .get('/team')
                 .set('Authorization', `JWT ${token}`)
                 .end((err, res) => {
-                    console.log('Temas from temas::',res.body.team)
                     chai.assert.equal(res.statusCode, 200)
                     chai.assert.equal(res.body.trainer, 'ELE')
                     chai.assert.equal(res.body.team[0].name, pokeName.name)

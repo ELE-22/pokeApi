@@ -9,7 +9,7 @@ module.exports = passport => {
     }
     
     passport.use(new Strategy(opts, (decoded, done)=>{
-        console.log('decoded:::',decoded)
+        //console.log('decoded:::',decoded)
         return done(null, decoded)
     }))
 
